@@ -11,3 +11,30 @@ We will be using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mist
 To get started, clone this repository to your computer and open it with a terminal. Navigate to the `example` directory (`cd example`). All of the Jekyll files for the website are contained in the `example` folder. Run `bundle update` to install the websites dependencies. If you get an error, then you might not have [Bundler](https://bundler.io/) installed, so run `gem install bundler` and try again.
 
 To make sure the site's dependencies are properly installed, run `bundle exec jekyll serve` and open a web browser to http://localhost:4000/ to preview the site.
+
+## Setting up your site
+
+All of the site's configurations are contained in the `_config.yml` file. Open up the `_config.yml` file and start adding in your own information (feel free to ignore any fields you don't plan on using). If you are previewing the site, you won't see any changes you make to the `_config.yml` file until you restart the server (i.e. `bundle exec jekyll serve`).
+
+- title
+- name
+- description
+- site author section
+
+*Change the theme's skin*
+
+## Content
+
+*Publish a new submission*
+
+## Metadata
+
+*Organize submissions by tag*
+
+## Layouts
+
+*Use different layouts for papers and posters*
+
+## Deployment
+
+*Deploy your site to GitHub Pages*
