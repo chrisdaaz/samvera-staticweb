@@ -1,4 +1,31 @@
 ---
-layout: home
-author_profile: true
+title: "Congratulations!"
+layout: splash
+author_profile: false
+header:
+  overlay_color: "#fff"
+  overlay_filter: "0.5"
+  overlay_image: "/assets/images/black_cat.jpg"
+  actions:
+    - label: "Submit"
+      url: /submit/
+  caption: # photo credit
+excerpt: "You made a conference website with Jekyll!"
+feature_row:
+  - title: "Posters"
+    excerpt: "This conference had **posters**."
+    url: "#test-link"
+    btn_label: "Browse"
+    btn_class: "btn--primary"
+  - title: "Papers"
+    excerpt: "This conference had **papers**."
+    url: "#test-link"
+    btn_label: "Browse"
+    btn_class: "btn--primary"
+  - title: "Panels"
+    excerpt: "This is conference had **panels**."
+    url: "#test-link"
+    btn_label: "Browse"
+    btn_class: "btn--primary"
 ---
+{% include feature_row %}
