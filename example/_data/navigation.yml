@@ -4,5 +4,5 @@ main:
      url: /about/
    - title: "Submit"
      url: /submit/
-   - title: "Schedule"
-     url: /schedule/
+   - title: "Sessions"
+     url: /sessions/
