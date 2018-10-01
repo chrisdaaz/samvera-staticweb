@@ -53,16 +53,21 @@ In this exercise, we'll use the Jekyll site as a separate front-end to collectio
 
 We'll imagine that conference presenters uploaded their presentations to the repository, which were then organized in a [collection](https://nurax-dev.curationexperts.com/collections/z603qx59p). The collection contains two papers and two posters. I have already created Markdown files for the papers in the Jekyll site, which are contained in the `_papers` directory.
 
-Open up one of the files (either `diaz.md` or `myers.md`). The file begins with YAML front-matter marked by `---` at the beginning and end of the YAML text. The YAML serves as the paper's metadata. A professional scholarly publication might have a lot more metadata, such as: `doi:`, `author_affiliation:`, `orcid:`, `date:`, etc. The rest of the document is the body of the paper, formatted in [Markdown](https://commonmark.org/help/).
+Open up one of the files (either `diaz.md` or `myers.md`). The file begins with YAML front-matter marked by `---` at the beginning and end of the YAML text. The YAML serves as the paper's metadata. A professional scholarly publication might have a lot more metadata, such as: `doi:`, `author_affiliation:`, `orcid:`, `date:`, etc. The rest of the document is the body of the paper, formatted in [Markdown](https://commonmark.org/help/). When you are previewing the site, you can view the HTML versions of these papers from the presentations listing: http://localhost:4000/presentations/
 
+Right now, the website is not linked to the repository, so let's fix that.
 
-- Go to the example [repository collection](https://nurax-dev.curationexperts.com/collections/z603qx59p)
-- Grab the URL to the paper
-- Go to the Markdown file for the corresponding paper
-- Add a YAML field called `download_url:` and add the URL as the value
-- Open the `paper.html` layout
-- Edit the Button element
-- Swap `href="#"` with `href="{{ page.download_url }}"`
+1. Go to the example [repository collection](https://nurax-dev.curationexperts.com/collections/z603qx59p)
+2. Copy the URL for both of the papers
+3. Go to the Markdown files for the corresponding papers in the Jekyll site
+4. Add a YAML field at the top of the `.md` files called `download_url:` and add the URLs as the value
+5. Open the `paper.html` layout from the `_layouts` directory in the Jekyll site
+6. Edit the Button HTML element: `<a href="#" class="btn btn--primary">Download</a>`
+7. Swap `href="#"` with `href="{{ page.download_url }}"`
+8. Save the changes to the `paper.html` file
+9. Run `bundle exec jekyll serve` to preview your changes
+
+In steps 1-4, you added a new metadata field for the location of the repository version for each paper on the Jekyll site. This will be applied to every Markdown file that uses the `paper.html` layout (currently, that would be every `.md` file in the `_papers` directory). In steps 5-8, you used the Liquid templating language to tell Jekyll to insert the YAML metadata into that particular HTML element. When Jekyll applies the HTML layout to the Markdown file, it will look for the repository URL for each paper and add it to the button element for every paper on the Jekyll website. To test, visit the Jekyll version of either paper, and click on the `Download` button. If you're directed to the repository record of the paper, then it worked!
 
 ## Exercise 3
 
