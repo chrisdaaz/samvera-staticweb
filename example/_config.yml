@@ -286,7 +286,7 @@ defaults:
       toc: true
       toc_label: "Contents"
       toc_sticky: true
-      tag: Paper
+      research: true
   # _pages
   - scope:
       path: ""

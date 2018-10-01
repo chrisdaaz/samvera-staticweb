@@ -18,7 +18,7 @@ To make sure the site's dependencies are properly installed, run `bundle exec je
 - `bundle exec jekyll serve` starts Jekyll's built-in server for you to preview your site locally
 - `bundle exec jekyll build` processes the files and outputs HTML/CSS to the `_site` directory. It is this directory that gets used when deploying to GitHub Pages.
 
-## Setting up your site
+## Exercise 1
 
 All of the site's configurations are contained in the `_config.yml` file. Open up the `_config.yml` file and start adding in your own information (feel free to ignore any fields you don't plan on using). If you are previewing the site, you won't see any changes you make to the `_config.yml` file until you restart the server (i.e. `bundle exec jekyll serve`).
 
@@ -28,23 +28,31 @@ Go ahead and start editing the configurations:
 - description
 - site author section
 
-**Activity 1**: Change the [theme's skin](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
-**Activity 2**: Enable Jekyll's [collections features](https://mmistakes.github.io/minimal-mistakes/docs/collections/) to begin working with different content types.
+Change the [theme's skin](https://mmistakes.github.io/minimal-mistakes/docs/configuration/). You can change it back to the `Default` skin if it's your favorite!
 
-## Content
+## Exercise 2
 
-*Publish a new submission*
+*Link the Repository Collection to the website*
 
-## Metadata
+For both papers...
+- Go to the example [repository collection](https://nurax-dev.curationexperts.com/collections/z603qx59p)
+- Grab the URL to the paper
+- Go to the Markdown file for the corresponding paper
+- Add a YAML field called `download_url:` and add the URL as the value
+- Open the `paper.html` layout
+- Edit the Button element
+- Swap `href="#"` with `href="{{ page.download_url }}"`
 
-*Organize submissions by tag*
+## Exercise 3
 
-## Layouts
+We also have some posters to add to the website. Using Jekyll's [collections features](https://mmistakes.github.io/minimal-mistakes/docs/collections/), create a new collection for posters. Hint: look at how the `Papers` collection is set up in file and use it as a guide. There is already a `poster.html` layout, so use that as the default layout for the collection.
 
-*Use different layouts for papers and posters*
+Next, create some Markdown files for the posters. Use the repository record and the poster itself to determine some metadata to include in the YAML front-matter.
 
-## Deployment
 
-*Deploy your site to GitHub Pages*
 
-## Acknowledgements
+## Exercise 4
+
+The last step will be to deploy your site to [GitHub Pages](https://pages.github.com/). This service is free for public GitHub repositories and will make your site publicly available online.
+
+Follow [these instructions](https://help.github.com/articles/user-organization-and-project-pages/) to make it happen.
