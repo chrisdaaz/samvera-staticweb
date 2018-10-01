@@ -57,7 +57,12 @@ author:
 abstract:
 ```
 
-The posters come from Figshare, which has embed code for their image viewer. Let's use the embed code from Figshare as header images for the posters on the site. Grab the embed code and paste it as-is in the body of the Markdown document for the poster.
+The posters come from Figshare, which has embed code for their image viewer. Let's use the embed code from Figshare as header images for the posters on the site. Grab the embed code and paste it in the body of the Markdown document for the poster.
+
+- Change the width value to `width="100%"`
+- Change the height value to `height="600"`
+
+> Example: <iframe src="https://widgets.figshare.com/articles/6626579/embed?show_title=1" width="100%" height="600" frameborder="0"></iframe>
 
 Links to the posters in Figshare:
 - [Mobilizing...](https://doi.org/10.23645/epacomptox.6626579.v1)
