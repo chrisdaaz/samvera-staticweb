@@ -29,17 +29,21 @@ To make sure the site's dependencies are properly installed, run `bundle exec je
 
 ## Exercise 1
 
-*Explore the site's configurations*
+*Customize the website*
 
-All of the site's configurations are contained in the `_config.yml` file. Open up the `_config.yml` file and start adding in your own information (feel free to ignore any fields you don't plan on using). If you are previewing the site, you won't see any changes you make to the `_config.yml` file until you restart the server (i.e. `bundle exec jekyll serve`).
+All of the site's configurations are contained in the `_config.yml` file with your text editor. Open up the `_config.yml` file and start adding in your own information (feel free to ignore any fields you don't plan on using).
 
-Go ahead and start editing the configurations:
-- title
-- name
-- description
-- site author section
+1. Edit the following fiels in the `_config.yml` file:
+    - title
+    - name
+    - description
+    - site author section
+    - minimal_mistakes_skin
+2. Save your changes
+3. Start the preview server from the terminal: `bundle exec jekyll serve`
+4. Preview the site with a web browser: http://localhost:4000/
 
-Change the [theme's skin](https://mmistakes.github.io/minimal-mistakes/docs/configuration/). You can change it back to the `Default` skin if it's your favorite!
+If you are previewing the site in your web browser, you won't see any of the changes you made to the `_config.yml` file until you restart the server (i.e. `bundle exec jekyll serve`).
 
 ## Exercise 2
 
