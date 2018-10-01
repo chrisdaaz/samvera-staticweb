@@ -47,9 +47,15 @@ If you are previewing the site in your web browser, you won't see any of the cha
 
 ## Exercise 2
 
-*Link the Repository Collection to the website*
+*Link a repository collection to the Jekyll website*
 
-For both papers...
+In this exercise, we'll use the Jekyll site as a separate front-end to collection of materials in a Samvera repository. This will give users and stakeholders of the repository's collection more options when presenting their content to the world, without the need to alter or enhance the repository's user interface.
+
+We'll imagine that conference presenters uploaded their presentations to the repository, which were then organized in a [collection](https://nurax-dev.curationexperts.com/collections/z603qx59p). The collection contains two papers and two posters. I have already created Markdown files for the papers in the Jekyll site, which are contained in the `_papers` directory.
+
+Open up one of the files (either `diaz.md` or `myers.md`). The file begins with YAML front-matter marked by `---` at the beginning and end of the YAML text. The YAML serves as the paper's metadata. A professional scholarly publication might have a lot more metadata, such as: `doi:`, `author_affiliation:`, `orcid:`, `date:`, etc. The rest of the document is the body of the paper, formatted in [Markdown](https://commonmark.org/help/).
+
+
 - Go to the example [repository collection](https://nurax-dev.curationexperts.com/collections/z603qx59p)
 - Grab the URL to the paper
 - Go to the Markdown file for the corresponding paper
