@@ -47,9 +47,21 @@ For both papers...
 
 We also have some posters to add to the website. Using Jekyll's [collections features](https://mmistakes.github.io/minimal-mistakes/docs/collections/), create a new collection for posters. Hint: look at how the `Papers` collection is set up in file and use it as a guide. There is already a `poster.html` layout, so use that as the default layout for the collection.
 
-Next, create some Markdown files for the posters. Use the repository record and the poster itself to determine some metadata to include in the YAML front-matter.
+Next, create some Markdown files for the posters in the new `_posters` directory. Use the repository record and the poster itself to determine some metadata to include in the YAML front-matter.
 
+Use this front-matter:
 
+```
+title:
+author:
+abstract:
+```
+
+The posters come from Figshare, which has embed code for their image viewer. Let's use the embed code from Figshare as header images for the posters on the site. Grab the embed code and paste it as-is in the body of the Markdown document for the poster.
+
+Links to the posters in Figshare:
+- [Mobilizing...](https://doi.org/10.23645/epacomptox.6626579.v1)
+- [An evaluation...](https://doi.org/10.23645/epacomptox.6743762.v1)
 
 ## Exercise 4
 
