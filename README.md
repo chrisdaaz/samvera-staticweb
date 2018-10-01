@@ -76,4 +76,22 @@ Links to the posters in Figshare:
 
 *Deploy your site*
 
-The last step will be to deploy your site to [GitHub Pages](https://pages.github.com/). This service is free for public GitHub repositories and will make your site publicly available online. Follow [these instructions](https://help.github.com/articles/user-organization-and-project-pages/) to make it happen.
+The last step will be to deploy your site to [GitHub Pages](https://pages.github.com/). This service is free for public GitHub repositories and will make your site publicly available online.
+
+GitHub Pages uses three methods for deploying static websites:
+- From the `Master` branch
+- From a `/docs` folder
+- From a `gh-pages` branch
+
+We will be using the `/docs` method. To do this, we'll need to configure a publishing directory for our website. Jekyll uses a default directory called `_site` but we can change this in the configurations (i.e. `_config.yml`).
+
+- Open the `_config.yml` file
+- Add `destination: "../docs"`
+- Run `bundle exec jekyll build`
+- Push your changes to GitHub
+- In GitHub, go to your repository settings
+- Scroll down to GitHub Pages
+- Change your source to `master branch / docs folder`
+- Save your changes
+
+Your site should be live at `username.github.io/samvera-staticweb` within a few minutes.
