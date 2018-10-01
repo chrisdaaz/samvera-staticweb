@@ -41,6 +41,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        <h2>{{ page.author }}</h2>
+        <h3>Abstract</h3>
+        <p>{{ page.abstract }}</p>
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
