@@ -70,6 +70,4 @@ Links to the posters in Figshare:
 
 ## Exercise 4
 
-The last step will be to deploy your site to [GitHub Pages](https://pages.github.com/). This service is free for public GitHub repositories and will make your site publicly available online.
-
-Follow [these instructions](https://help.github.com/articles/user-organization-and-project-pages/) to make it happen.
+The last step will be to deploy your site to [GitHub Pages](https://pages.github.com/). This service is free for public GitHub repositories and will make your site publicly available online. Follow [these instructions](https://help.github.com/articles/user-organization-and-project-pages/) to make it happen.
