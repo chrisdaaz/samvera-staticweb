@@ -73,28 +73,52 @@ In steps 1-4, you added a new metadata field for the location of the repository 
 
 *Let's publish more content*
 
-We also have some posters to add to the website. Using Jekyll's [collections features](https://mmistakes.github.io/minimal-mistakes/docs/collections/), create a new collection for posters. Hint: look at how the `Papers` collection is set up in file and use it as a guide. There is already a `poster.html` layout, so use that as the default layout for the collection.
+We also have some posters to add to the website. For the purposes of this exercise, we will create a new directory for the posters using Jekyll's [collections features](https://mmistakes.github.io/minimal-mistakes/docs/collections/). This will give us the flexibility to create a new layout and organize our site's contents by content type.
 
-Next, create some Markdown files for the posters in the new `_posters` directory. Use the repository record and the poster itself to determine some metadata to include in the YAML front-matter.
+Open up the `_config.yml` file with your text editor and add the `collections` configurations according to the theme's documentation and save the file. Hint: look at how the `Papers` collection is set up in file and use it as a guide. Notice that the defaults section of the `_config.yml` file allows you to reuse YAML metadata across your entire collection more easily. For example, we will want to have a Table of Contents for our papers and reuse the same layout for all of them, but we we'll want a _different_ layout _without_ a Table of Contents for our posters.
 
-Use this front-matter:
+Here's how you'll want to format your `papers` defaults:
 
 ```
+defaults:
+  # _posters
+  - scope:
+      path: ""
+      type: posters
+    values:
+      layout: poster
+      author_profile: false
+      share: true
+      research: true
+```
+
+Next, you'll need to create a new directory called `_posters` to store all of your Markdown files for your posters. Create some Markdown files for the posters in the new `_posters` directory. Use the repository record and the poster itself to determine some metadata to include this front-matter:
+
+```
+---
 title:
 author:
 abstract:
+---
 ```
 
-The posters come from Figshare, which has embed code for their image viewer. Let's use the embed code from Figshare as header images for the posters on the site. Grab the embed code and paste it in the body of the Markdown document for the poster.
-
-- Change the width value to `width="100%"`
-- Change the height value to `height="600"`
-
-> Example: <iframe src="https://widgets.figshare.com/articles/6626579/embed?show_title=1" width="100%" height="600" frameborder="0"></iframe>
+The posters come from Figshare, which has embed code for their image viewer. Let's use the embed code from Figshare as header images for the posters on the site.
 
 Links to the posters in Figshare:
 - [Mobilizing...](https://doi.org/10.23645/epacomptox.6626579.v1)
 - [An evaluation...](https://doi.org/10.23645/epacomptox.6743762.v1)
+
+Copy the embed code and paste it in the body of the Markdown document for the poster (i.e. below the `---` under the font-matter).
+
+Some additional modifications to the FigShare embed code:
+
+- Change the width value to `width="100%"`
+- Change the height value to `height="600"`
+
+```
+<iframe src="https://widgets.figshare.com/articles/6626579/embed?show_title=1" width="100%" height="600" frameborder="0"></iframe>
+```
+Save the Markdown files and preview the changes: `bundle exec jekyll serve`
 
 ## Exercise 4
 
