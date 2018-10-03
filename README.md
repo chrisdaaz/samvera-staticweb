@@ -31,7 +31,7 @@ To make sure the site's dependencies are properly installed, run `bundle exec je
 
 *Customize the website*
 
-All of the site's configurations are contained in the `_config.yml` file with your text editor. Open up the `_config.yml` file and start adding in your own information (feel free to ignore any fields you don't plan on using).
+All of the site's configurations are contained in the `_config.yml`. Open up the `_config.yml` file with your text editor and start adding in your own information (feel free to ignore any fields you don't plan on using).
 
 1. Edit the following fiels in the `_config.yml` file:
     - title
@@ -49,7 +49,7 @@ If you are previewing the site in your web browser, you won't see any of the cha
 
 *Link a repository collection to the Jekyll website*
 
-In this exercise, we'll use the Jekyll site as a separate front-end to collection of materials in a Samvera repository. This will give users and stakeholders of the repository's collection more options when presenting their content to the world, without the need to alter or enhance the repository's user interface.
+In this exercise, we'll use the Jekyll site as a separate front-end to a collection of materials in a Samvera repository. This will give users and stakeholders of the repository's collection more options when presenting their content to the world, without the need to alter or enhance the repository's user interface.
 
 We'll imagine that conference presenters uploaded their presentations to the repository, which were then organized in a [collection](https://nurax-dev.curationexperts.com/collections/z603qx59p). The collection contains two papers and two posters. I have already created Markdown files for the papers in the Jekyll site, which are contained in the `_papers` directory.
 
