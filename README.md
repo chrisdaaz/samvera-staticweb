@@ -2,7 +2,7 @@
 
 This repository contains presentation materials and exercise files for an introductory workshop on using [Jekyll](https://jekyllrb.com/) for digital libraries projects.
 
-Jekyll is Ruby gem that uses plain-text files to generate HTML. Instead of using a web-based content management system, you interact with the plain-text files with a text editor and run `build` and `serve` commands with your computer terminal to make updates to the site. In this context, we'll be using GitHub to store our source code and the GitHub Pages service to host our websites.
+Jekyll is Ruby gem that uses plain-text files to generate HTML. Instead of using a web-based content management system, you interact with the plain-text files with a text editor and run `build` and `serve` commands with your computer terminal to make updates to the site. In this context, we'll be using GitHub to store our plain text files and the GitHub Pages service to host our websites.
 
 In this workshop, we will be following an example use case. We will be building a conference website for a collection of presentations we're storing in our [Samvera repository](https://nurax-dev.curationexperts.com/).
 
