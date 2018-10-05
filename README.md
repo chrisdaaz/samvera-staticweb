@@ -6,22 +6,29 @@ Jekyll is Ruby gem that uses plain-text files to generate HTML. Instead of using
 
 In this workshop, we will be following an example use case. We will be building a conference website for a collection of presentations we're storing in our [Samvera repository](https://nurax-dev.curationexperts.com/).
 
-**Prerequisites**: You will need to have Jekyll and all of its dependencies installed on your computer. Follow [these instructions](https://jekyllrb.com/docs/installation/) for tips based on your operating system. You will also need a text editor, git client (optional), and some familiarity with a computer terminal.
+**Prerequisites**: You will need to have Jekyll and all of its dependencies installed on your computer. Follow [these instructions](https://jekyllrb.com/docs/installation/) for tips based on your operating system. You will also need a text editor, [GitHub Desktop](https://desktop.github.com/) (optional for git pros), and some familiarity with a computer terminal.
 
 We will be using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme to build our conference website. Feel free to refer to the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) to try out some layout options and features or view examples of how the theme can be used.  
 
 ## Using the Exercise Files
 
-We'll start by creating a local copy of the files to your computer. Clone or download the .zip of this code repository to your computer and open the file directory using a terminal. Navigate to the `example` directory (`cd example`). All of the Jekyll files for the website are contained in the `example` folder.
+For this section, we will be using GitHub Desktop. If you're familiar with git and don't use a git client, you can skim this section to follow along. If you haven't already done so, open up the GitHub Desktop preferences and select your external editor (e.g. Atom) and shell (e.g. iTerm2) of choice.
 
-Terminal example that is open to the Jekyll project files:
+We'll start by creating a local copy of the files to your computer. To do this, we can create a clone using git or a git client. In GitHub Desktop, go to `File`, `Clone repository...`, switch to the URL panel, then enter in this URL: `https://github.com/chrisdaaz/samvera-staticweb.git`
+
+We can now use GitHub Desktop to open our files with a terminal or text editor, track changes we make to files between saves, commit changes to our branches, and push our repository to our GitHub accounts.
+
+Open up the repository files in your terminal by going to `Repository` and `Open in [terminal]` in GitHub Desktop. This will open up your terminal to the repository's directory:
+
 ```
-user:/mnt/c/user/Desktop/samvera-staticweb/example $
+user:/mnt/c/user/Desktop/samvera-staticweb/$
 ```
+
+Move over to the `example` directory by entering `cd example` in your terminal. This is the directory that contains all of our Jekyll project files that we'll use to build our site. All of our terminal commands will be from this directory.
 
 In addition to the files, you'll need a few more Ruby gems to use practice theme. To install the additional dependencies, run `bundle install`. If you get an error, then you might not have [Bundler](https://bundler.io/) installed, so run `sudo gem install bundler` and try again.
 
-To make sure the site's dependencies are properly installed, run `bundle exec jekyll serve` in your terminal. This will build a local copy of the website on your computer and make it available on a local server. To see the site in action, open a web browser to http://localhost:4000/ to preview the site.
+To make sure the site's dependencies are properly installed, run `bundle exec jekyll serve`. This will build a local copy of the website on your computer and make it available on a local server. To see the site in action, open a web browser to http://localhost:4000/ to preview the site.
 
 **Some common commands for your reference**
 - `bundle exec jekyll serve` starts Jekyll's built-in server for you to preview your site locally
