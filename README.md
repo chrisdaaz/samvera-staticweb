@@ -19,7 +19,7 @@ Terminal example that is open to the Jekyll project files:
 user:/mnt/c/user/Desktop/samvera-staticweb/example $
 ```
 
-In addition to the files, you'll need a few more Ruby gems to use practice theme. To install the additional dependencies, run `bundle update`. If you get an error, then you might not have [Bundler](https://bundler.io/) installed, so run `sudo gem install bundler` and try again.
+In addition to the files, you'll need a few more Ruby gems to use practice theme. To install the additional dependencies, run `bundle install`. If you get an error, then you might not have [Bundler](https://bundler.io/) installed, so run `sudo gem install bundler` and try again.
 
 To make sure the site's dependencies are properly installed, run `bundle exec jekyll serve` in your terminal. This will build a local copy of the website on your computer and make it available on a local server. To see the site in action, open a web browser to http://localhost:4000/ to preview the site.
 
