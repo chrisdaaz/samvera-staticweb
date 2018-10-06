@@ -1,12 +1,12 @@
-# Static Websites and Community Documentation: Samvera Connect 2018
+# Static Websites and Community Documentation
 
-This repository contains presentation materials and exercise files for an introductory workshop on using [Jekyll](https://jekyllrb.com/) for digital libraries projects.
+This repository contains presentation materials and exercise files for an introductory workshop on [Jekyll](https://jekyllrb.com/), presented at Samvera Connect, 2018, at the University of Utah.
 
 Jekyll is Ruby gem that uses plain-text files to generate HTML. Instead of using a web-based content management system, you interact with the plain-text files with a text editor and run `build` and `serve` commands with your computer terminal to make updates to the site. In this context, we'll be using GitHub to store our plain text files and the GitHub Pages service to host our websites.
 
 In this workshop, we will be following an example use case. We will be building a conference website for a collection of presentations we're storing in our [Samvera repository](https://nurax-dev.curationexperts.com/).
 
-**Prerequisites**: You will need to have Jekyll and all of its dependencies installed on your computer. Follow [these instructions](https://jekyllrb.com/docs/installation/) for tips based on your operating system. You will also need a text editor, [GitHub Desktop](https://desktop.github.com/) (optional for git pros), and some familiarity with a computer terminal.
+**Prerequisites**: You will need to have Jekyll and all of its dependencies installed on your computer. Follow [these instructions](https://jekyllrb.com/docs/installation/) for tips based on your operating system. You will also need a text editor, [GitHub Desktop](https://desktop.github.com/) (optional), and some familiarity with a computer terminal.
 
 We will be using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme to build our conference website. Feel free to refer to the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) to try out some layout options and features or view examples of how the theme can be used.  
 
@@ -14,7 +14,7 @@ We will be using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mist
 
 For this section, we will be using GitHub Desktop. If you're familiar with git and don't use a git client, you can skim this section to follow along. If you haven't already done so, open up the GitHub Desktop preferences and select your external editor (e.g. Atom) and shell (e.g. iTerm2) of choice.
 
-We'll start by creating a local copy of the files to your computer. To do this, we can create a clone using git or a git client. In GitHub Desktop, go to `File`, `Clone repository...`, switch to the URL panel, then enter in this URL: `https://github.com/chrisdaaz/samvera-staticweb.git`
+We'll start by creating a local copy of these files to your computer. In GitHub Desktop, go to `File`, `Clone repository...`, switch to the URL panel, then enter in this URL: `https://github.com/chrisdaaz/samvera-staticweb.git`
 
 We can now use GitHub Desktop to open our files with a terminal or text editor, track changes we make to files between saves, commit changes to our branches, and push our repository to our GitHub accounts.
 
