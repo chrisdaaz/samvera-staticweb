@@ -301,5 +301,3 @@ collections:
   papers:
     output: true
     permalink: /:collection/:path/
-
-destination: "../docs"
