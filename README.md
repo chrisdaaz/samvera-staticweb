@@ -144,6 +144,7 @@ We will be using the `/docs` folder method. To do this, we'll need to configure 
 
 - Open the `_config.yml` file
 - Add `destination: "../docs"`
+- Change `url` to `url: username.github.io/samvera-staticweb`
 - Run `bundle exec jekyll build`
 
 You now have a static website located in `../samvera-staticweb/docs/`. The next step will be to push your site up to your GitHub account. In GitHub Desktop, there should be an option in the top menu that says "Publish This repository" which will make your version of the repository available online.
@@ -153,7 +154,7 @@ You now have a static website located in `../samvera-staticweb/docs/`. The next 
 - Change your source to `master branch / docs folder`
 - Save your changes
 
-In about 10 minutes, your site should be live at `username.github.io/samvera-staticweb`. 
+In about 10 minutes, your site should be live at `username.github.io/samvera-staticweb`.
 
 # Part Two: Community Documentation
 

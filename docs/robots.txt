@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://chrisdaaz.github.io/samvera-staticweb//sitemap.xml
