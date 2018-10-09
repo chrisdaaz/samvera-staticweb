@@ -2,6 +2,8 @@
 
 This repository contains presentation materials and exercise files for an introductory workshop on [Jekyll](https://jekyllrb.com/), presented at Samvera Connect, 2018, at the University of Utah.
 
+[Presentation Slides](https://docs.google.com/presentation/d/1U6_ynslVWD7EFaBfwH_YUQr5CvrM1XN3N5jglTNRedA/edit?usp=sharing)
+
 Jekyll is Ruby gem that uses plain-text files to generate HTML. Instead of using a web-based content management system, you interact with the plain-text files with a text editor and run `build` and `serve` commands with your computer terminal to make updates to the site. In this context, we'll be using GitHub to store our plain text files and the GitHub Pages service to host our websites.
 
 In this workshop, we will be following an example use case. We will be building a conference website for a collection of presentations we're storing in our [Samvera repository](https://nurax-dev.curationexperts.com/).
@@ -150,3 +152,7 @@ We will be using the `/docs` method. To do this, we'll need to configure a publi
 - Save your changes
 
 Your site should be live at `username.github.io/samvera-staticweb` within a few minutes.
+
+# Part Two: Community Documentation
+
+The Samvera Community Documentation tutorial is available over [here](https://gist.github.com/afred/4849b26438c1651bbdb45b149b93b4a6).
