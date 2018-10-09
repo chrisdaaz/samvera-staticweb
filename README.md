@@ -144,6 +144,7 @@ We will be using the `/docs` folder method. To do this, we'll need to configure 
 
 - Open the `_config.yml` file
 - Add `destination: "../docs"`
+- Change the `url:` value to `url: username.github.io/samvera-staticweb` except use your username at the beginning
 - Run `bundle exec jekyll build`
 
 You now have a static website located in `../samvera-staticweb/docs/`. The next step will be to push your site up to your GitHub account. In GitHub Desktop, there should be an option in the top menu that says "Publish This repository" which will make your version of the repository available online.
@@ -153,7 +154,16 @@ You now have a static website located in `../samvera-staticweb/docs/`. The next 
 - Change your source to `master branch / docs folder`
 - Save your changes
 
-In about 10 minutes, your site should be live at `username.github.io/samvera-staticweb`. 
+In about 10 minutes, your site should be live at `username.github.io/samvera-staticweb`. If you notice that the site is missing CSS styles or images. There is likely a problem with the assets path. In this case, you might need to edit Includes or Layouts files to add `{{ site.url }}` at the beginning of an image or css path.
+
+For example, if you get a site that looks like this:
+
+
+Then you're probably need to change the relative CSS path to an absolute path. To do this, open up the `head.html` file in the `_includes` folder and change the CSS link element to this:
+
+```
+<link rel="stylesheet" href="{{ site.url }}{{ '/assets/css/main.css' | relative_url }}">
+```
 
 # Part Two: Community Documentation
 
