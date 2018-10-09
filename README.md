@@ -140,18 +140,20 @@ GitHub Pages uses three methods for deploying static websites:
 - From a `/docs` folder
 - From a `gh-pages` branch
 
-We will be using the `/docs` method. To do this, we'll need to configure a publishing directory for our website. Jekyll uses a default directory called `_site` but we can change this in the configurations (i.e. `_config.yml`).
+We will be using the `/docs` folder method. To do this, we'll need to configure a publishing directory for our website. Jekyll uses a default directory called `_site` but we can change this in the configurations (i.e. `_config.yml`).
 
 - Open the `_config.yml` file
 - Add `destination: "../docs"`
 - Run `bundle exec jekyll build`
-- Push your changes to GitHub
+
+You now have a static website located in `../samvera-staticweb/docs/`. The next step will be to push your site up to your GitHub account. In GitHub Desktop, there should be an option in the top menu that says "Publish This repository" which will make your version of the repository available online. 
+
 - In GitHub, go to your repository settings
 - Scroll down to GitHub Pages
 - Change your source to `master branch / docs folder`
 - Save your changes
 
-Your site should be live at `username.github.io/samvera-staticweb` within a few minutes.
+In a few minutes, your site should be live at `username.github.io/samvera-staticweb` within a few minutes.
 
 # Part Two: Community Documentation
 
