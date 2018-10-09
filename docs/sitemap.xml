@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://chrisdaaz.github.io/samvera-staticweb//papers/diaz/</loc>
-<lastmod>2018-10-09T12:32:20-06:00</lastmod>
+<loc>https://chrisdaaz.github.io/samvera-staticweb/papers/diaz/</loc>
+<lastmod>2018-10-09T12:34:46-06:00</lastmod>
 </url>
 <url>
-<loc>https://chrisdaaz.github.io/samvera-staticweb//papers/myers/</loc>
-<lastmod>2018-10-09T12:32:20-06:00</lastmod>
+<loc>https://chrisdaaz.github.io/samvera-staticweb/papers/myers/</loc>
+<lastmod>2018-10-09T12:34:46-06:00</lastmod>
 </url>
 <url>
-<loc>https://chrisdaaz.github.io/samvera-staticweb//about/</loc>
+<loc>https://chrisdaaz.github.io/samvera-staticweb/about/</loc>
 </url>
 <url>
-<loc>https://chrisdaaz.github.io/samvera-staticweb//</loc>
+<loc>https://chrisdaaz.github.io/samvera-staticweb/</loc>
 </url>
 <url>
-<loc>https://chrisdaaz.github.io/samvera-staticweb//presentations/</loc>
+<loc>https://chrisdaaz.github.io/samvera-staticweb/presentations/</loc>
 </url>
 </urlset>
