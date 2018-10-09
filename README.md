@@ -158,6 +158,7 @@ In about 10 minutes, your site should be live at `username.github.io/samvera-sta
 
 For example, if you get a site that looks like this:
 
+![no css](/screenshots/no-css.png)
 
 Then you're probably need to change the relative CSS path to an absolute path. To do this, open up the `head.html` file in the `_includes` folder and change the CSS link element to this:
 
