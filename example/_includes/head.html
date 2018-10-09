@@ -12,7 +12,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ site.url }}{{ '/assets/css/main.css' | relative_url }}">
 
 <!--[if lte IE 9]>
   <style>
@@ -36,6 +36,6 @@
     {% else %}
       {% capture script_path %}{{ script | relative_url }}{% endcapture %}
     {% endif %}
-    <script src="{{ script_path }}"></script>
+    <script src="{{ site.url }}{{ script_path }}"></script>
   {% endfor %}
 {% endif %}
