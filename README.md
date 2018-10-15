@@ -12,6 +12,8 @@ In this workshop, we will be following an example use case. We will be building 
 
 We will be using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme to build our conference website. Feel free to refer to the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) to try out some layout options and features or view examples of how the theme can be used.  
 
+Email me with any questions or feedback about this: chris-diaz@northwestern.edu
+
 ## Using the Exercise Files
 
 For this section, we will be using GitHub Desktop. If you're familiar with git and don't use a git client, you can skim this section to follow along. If you haven't already done so, open up the GitHub Desktop preferences and select your external editor (e.g. Atom) and shell (e.g. iTerm2) of choice.
@@ -169,3 +171,7 @@ Then you're probably need to change the relative CSS path to an absolute path. T
 # Part Two: Community Documentation
 
 The Samvera Community Documentation tutorial is available over [here](https://gist.github.com/afred/4849b26438c1651bbdb45b149b93b4a6).
+
+## Acknowledgements
+
+This tutorial was inspired by Kaitlin Newson and Kim Pham's [2018 workshop on Hugo presented at the Code4Lib conference](https://github.com/kaitlinnewson/c4l18-workshop-staticweb). 
